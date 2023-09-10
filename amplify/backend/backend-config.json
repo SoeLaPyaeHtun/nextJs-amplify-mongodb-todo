@@ -1,0 +1,53 @@
+{
+  "api": {
+    "todomongodb": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
+  "function": {
+    "todoResolver": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_todoResolver_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "todoResolver"
+        }
+      ]
+    },
+    "AMPLIFY_function_todoResolver_mongodbUri": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "todoResolver"
+        }
+      ]
+    },
+    "AMPLIFY_function_todoResolver_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "todoResolver"
+        }
+      ]
+    }
+  }
+}

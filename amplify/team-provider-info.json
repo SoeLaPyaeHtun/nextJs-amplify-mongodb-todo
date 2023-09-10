@@ -1,0 +1,27 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-todomongodb-dev-221450-authRole",
+      "UnauthRoleArn": "arn:aws:iam::831120792053:role/amplify-todomongodb-dev-221450-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::831120792053:role/amplify-todomongodb-dev-221450-authRole",
+      "Region": "sa-east-1",
+      "DeploymentBucketName": "amplify-todomongodb-dev-221450-deployment",
+      "UnauthRoleName": "amplify-todomongodb-dev-221450-unauthRole",
+      "StackName": "amplify-todomongodb-dev-221450",
+      "StackId": "arn:aws:cloudformation:sa-east-1:831120792053:stack/amplify-todomongodb-dev-221450/6b7e9660-4fe4-11ee-b84a-068ebe260d44",
+      "AmplifyAppId": "d3o0p6dzvs8pxj"
+    },
+    "categories": {
+      "function": {
+        "todoResolver": {
+          "mongodbUri": "mongodb+srv://nothing:7KwPcCE8PIblOPrD@cluster-nothing.fjaygvb.mongodb.net/nothing?retryWrites=true&w=majority",
+          "deploymentBucketName": "amplify-todomongodb-dev-221450-deployment",
+          "s3Key": "amplify-builds/todoResolver-74596c4d56707a716937-build.zip"
+        }
+      },
+      "api": {
+        "todomongodb": {}
+      }
+    }
+  }
+}
