@@ -1,0 +1,9 @@
+{
+    "typeName" : "Mutation",
+    "fieldName" : "updateTodo",
+    "arguments" : {
+        "id" : "64fdfad89fa42527910fd5ed",
+        "title" : "testtttttttttt",
+        "completed": true
+    }
+}

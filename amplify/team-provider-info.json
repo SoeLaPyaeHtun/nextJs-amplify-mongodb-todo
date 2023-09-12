@@ -16,7 +16,7 @@
         "todoResolver": {
           "mongodbUri": "mongodb+srv://nothing:7KwPcCE8PIblOPrD@cluster-nothing.fjaygvb.mongodb.net/nothing?retryWrites=true&w=majority",
           "deploymentBucketName": "amplify-todomongodb-dev-221450-deployment",
-          "s3Key": "amplify-builds/todoResolver-74596c4d56707a716937-build.zip"
+          "s3Key": "amplify-builds/todoResolver-6d4653674f524678375a-build.zip"
         }
       },
       "api": {

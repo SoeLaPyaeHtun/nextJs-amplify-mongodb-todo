@@ -6,8 +6,33 @@ type Query {
   getTodos: [Todo] @function(name: "todoResolver-${env}")
 }
 
+type Mutation{
+  # create todo
+  createTodo(
+    title: String!
+    completed: Boolean
+  ): Todo @function(name: "todoResolver-${env}")
+
+ #update todo
+  updateTodo(
+    id: ID!
+    title: String
+    completed: Boolean
+  ): Todo @function(name: "todoResolver-${env}")
+
+
+#   #delete todo
+  deleteTodo(
+    id: ID!
+    ): Todo @function(name: "todoResolver-${env}")
+}
+
+
+
+
+
 type Todo {
-  id: ID!
+  id: ID
   title: String!
   completed: Boolean
 }

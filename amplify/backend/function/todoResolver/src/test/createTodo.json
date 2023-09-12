@@ -1,0 +1,8 @@
+{
+    "typeName" : "Mutation",
+    "fieldName" : "createTodo",
+    "arguments" : {
+        "title" : "test",
+        "completed": false
+    }
+}

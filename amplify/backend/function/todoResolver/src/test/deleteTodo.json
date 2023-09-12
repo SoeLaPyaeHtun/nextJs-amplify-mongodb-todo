@@ -1,0 +1,7 @@
+{
+    "typeName" : "Mutation",
+    "fieldName" : "deleteTodo",
+    "arguments" : {
+        "id" : "64fdfb946c1a6a83d5f431b8"
+    }
+}

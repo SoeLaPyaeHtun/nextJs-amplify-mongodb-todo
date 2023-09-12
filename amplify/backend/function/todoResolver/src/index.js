@@ -1,6 +1,6 @@
 
 
-const { getTodos } = require('./todo')
+const { getTodos , createTodo, updateTodo, deleteTodo } = require('./todo')
 
 
 exports.handler = async (event) => {
@@ -12,5 +12,16 @@ exports.handler = async (event) => {
             default:
               throw new Error(`Unknown field: \${event.field}`);
           }
+        case "Mutation":
+            switch (event.fieldName) {
+                case "createTodo":
+                    return await createTodo(event.arguments)
+                case "updateTodo":
+                    return await updateTodo(event.arguments)
+                case "deleteTodo":
+                    return await deleteTodo(event.arguments)
+                default:
+                    throw new Error(`Unknown field: \${event.field}`);
+            }
       }
 }
